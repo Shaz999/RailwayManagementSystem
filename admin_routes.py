@@ -8,7 +8,8 @@ admin_bp = Blueprint('admin', __name__)
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if request.headers.get('X-API-KEY') != ADMIN_API_KEY:
+        if request.headers.get('X-API-KEY') != ADMIN_API_KEY:'waMkHbbdpz-jd7FdS_f7RQ0dI6JtgrSc_p2TQcOg2zM'
+
             return jsonify({'error': 'Unauthorized'}), 403
         return f(*args, **kwargs)
     return decorated_function
