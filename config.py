@@ -7,7 +7,7 @@ JWT_SECRET_KEY = 'rVfQHQlIzm7gG_jcI7vUG6ZUZjcp7fWqaLlRVZLriX8'
 def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
-        user='your_db_user',
-        password='your_db_password',
-        database='your_database_name'
+        user='Sa',
+        password='******',
+        database='railway_system'
     )
